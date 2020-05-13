@@ -5,41 +5,41 @@
 $mainFont                : 'Noto Sans', 'Roboto', Helvetica, sans-serif;
 
 // Size
-$mainFontColor           : #000000;
-$mainFontSize            : 14px;
-$mainFontWeight          : 400;
-$mainLineHeight          : 1.4;
+$mainFontColor           : #000000 !default;
+$mainFontSize            : 14px !default;
+$mainFontWeight          : 400 !default;
+$mainLineHeight          : 1.4 !default;
 
-//$desktopWidth            : 1280px;
-$smDesktopWidth          : 1024px;
-$tableWidth              : 768px;
-$smTableWidth            : 640px;
-$phoneWidth              : 480px;
-$smPhoneWidth            : 320px;
+//$desktopWidth            : 1280px !default;
+$smDesktopWidth          : 1024px !default;
+$tableWidth              : 768px !default;
+$smTableWidth            : 640px !default;
+$phoneWidth              : 480px !default;
+$smPhoneWidth            : 320px !default;
 
 // Main color
-$black                   : #000000;
-$vantablack              : #010101;
-$dover-grey              : #848484;
-$flagstone               : #acacac;
-$white                   : #ffffff;
-
-$default-color           : #ffffff;
-$primary-color           : #444ce0;
-$success-color           : #26de81;
-$danger-color            : #fc5c65;
-$warning-color           : #fed330;
-$light-color             : #999999;
-$purple-color            : #8854d0;
-
+$black                   : #000000 !default;
+$vantablack              : #010101 !default;
+$dover-grey              : #848484 !default;
+$flagstone               : #acacac !default;
+$white                   : #ffffff !default;
+                                   !default
+$default-color           : #ffffff !default;
+$primary-color           : #444ce0 !default;
+$success-color           : #26de81 !default;
+$danger-color            : #fc5c65 !default;
+$warning-color           : #fed330 !default;
+$light-color             : #999999 !default;
+$purple-color            : #8854d0 !default;
+                                   !default
 // Neutral Color
-$neutral-primary         : #303133;
-$neutral-regular         : #606266;
-$neutral-secondary       : #909399;
-$neutral-placeholder     : #C0C4CC;
-
+$neutral-primary         : #303133 !default;
+$neutral-regular         : #606266 !default;
+$neutral-secondary       : #909399 !default;
+$neutral-placeholder     : #C0C4CC !default;
+                                   !default
 // Border Color
-$border-base             : #DCDFE6;
-$border-light            : #E4E7ED;
-$border-lighter          : #EBEEF5;
-$border-lightex          : #F2F6FC;
+$border-base             : #DCDFE6 !default;
+$border-light            : #E4E7ED !default;
+$border-lighter          : #EBEEF5 !default;
+$border-lightex          : #F2F6FC !default;
