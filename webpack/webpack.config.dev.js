@@ -10,6 +10,7 @@ module.exports = merge(common, {
     chunkFilename: 'js/[name].chunk.js'
   },
   devServer: {
+    compress: true,
     inline: true
   },
   plugins: [
@@ -25,7 +26,7 @@ module.exports = merge(common, {
         enforce: 'pre',
         loader: 'eslint-loader',
         options: {
-          emitWarning: true,
+          emitWarning: true
         }
       },
       {
@@ -35,7 +36,21 @@ module.exports = merge(common, {
       },
       {
         test: /\.s?css$/i,
-        use: ['style-loader', 'css-loader?sourceMap=true', 'sass-loader']
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: { sourceMap: true }
+          },
+          {
+            loader: 'postcss-loader',
+            options: { sourceMap: true, config: { path: `postcss.config.js` } }
+          },
+          {
+            loader: 'sass-loader',
+            options: { sourceMap: true }
+          },
+        ]
       }
     ]
   }
