@@ -1,7 +1,12 @@
 const Path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const fs = require('fs');
+
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const PAGES_DIR = Path.resolve(__dirname, '../src/pug/pages/');
+const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'));
 
 module.exports = {
   entry: {
@@ -20,11 +25,17 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([
-      { from: Path.resolve(__dirname, '../public'), to: 'public' }
+      {from: Path.resolve(__dirname, '../assets'), to: 'assets'}
     ]),
-    new HtmlWebpackPlugin({
-      template: Path.resolve(__dirname, '../src/index.html')
-    })
+    // закомментировать блок, если используешь pug
+    // new HtmlWebpackPlugin({
+    //   template: Path.resolve(__dirname, '../src/index.html'),
+    // }),
+    // раскомментировать блок, если используешь pug
+    ...PAGES.map(page => new HtmlWebpackPlugin({
+      template: `${PAGES_DIR}/${page}`,
+      filename: `./${page.replace(/\.pug/,'.html')}`
+    }))
   ],
   resolve: {
     alias: {
@@ -46,6 +57,10 @@ module.exports = {
             name: '[path][name].[ext]'
           }
         }
+      },
+      {
+        test: /\.pug$/,
+        use: ['pug-loader']
       },
     ]
   }
