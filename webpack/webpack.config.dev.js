@@ -38,18 +38,14 @@ module.exports = merge(common, {
         test: /\.s?css$/i,
         use: [
           'style-loader',
-          {
-            loader: 'css-loader',
-            options: { sourceMap: true }
+          { loader: 'css-loader', options: { sourceMap: true, importLoaders: 1 } },
+          { loader: 'postcss-loader', options: {
+              ident: 'postcss',
+              sourceMap: true,
+              config: { path: `postcss.config.js` }
+            }
           },
-          {
-            loader: 'postcss-loader',
-            options: { sourceMap: true, config: { path: `postcss.config.js` } }
-          },
-          {
-            loader: 'sass-loader',
-            options: { sourceMap: true }
-          },
+          { loader: 'sass-loader', options: { sourceMap: true } },
         ]
       }
     ]

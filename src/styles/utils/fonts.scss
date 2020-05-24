@@ -24,49 +24,6 @@
   }
 */
 
-@font-face {
-  font-family: NotoSans;
-  src: local('Noto Sans'),
-  url(/public/fonts/NotoSans/NotoSans.woff2) format("woff2"),
-  url(/public/fonts/NotoSans/NotoSans.woff) format("woff"),
-  url(/public/fonts/NotoSans/NotoSans.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: NotoSans;
-  src: local('Noto Sans Bold'),
-  url(/public/fonts/NotoSans/NotoSans-Bold.woff2) format("woff2"),
-  url(/public/fonts/NotoSans/NotoSans-Bold.woff) format("woff"),
-  url(/public/fonts/NotoSans/NotoSans-Bold.ttf) format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: NotoSerif;
-  src: local('Noto Serif'),
-  url(/public/fonts/NotoSerif/NotoSerif.woff2) format("woff2"),
-  url(/public/fonts/NotoSerif/NotoSerif.woff) format("woff"),
-  url(/public/fonts/NotoSerif/NotoSerif.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-}
-
-@font-face {
-  font-family: PlayfairDisplay;
-  src: local('Playfair Display Regular'),
-  url(/public/fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff2) format("woff2"),
-  url(/public/fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff) format("woff"),
-  url(/public/fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-}
 
 // 2. Example with mixin (example):
 // NOTE: do NOT use expansion (.woff, .svg etc) for path! Path will be '/assets/fonts/OpenSans/opensans';

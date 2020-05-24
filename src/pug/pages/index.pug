@@ -12,47 +12,27 @@ html(lang='en')
     meta(content='#2d89ef', name='msapplication-TileColor')
     meta(content='#ffffff', name='theme-color')
     title Webpack Starter
-  body
+  body.wrapper
+    header.content-wrapper
+      nav
+        ul
+          li
+            a(href='#') 1
+          li
+            a(href='#') 2
+          li
+            a(href='#') 3
+          li
+            a(href='#') 4
+          li
+            a(href='#') Следующая
     main.content-wrapper
-      header.text-block.m-btm-20
-        h1.text-block__header ДЕНЬ В ФОТО
-        span.decor__line
-      section.section-block
-        .date-block.date-block_size
-          .date-block__text
-            span 21
-            |  сентября
-        img.img-big(src='./assets/img/_00001.jpg', alt='pic')
-      section.section-block__main
+      section
+        h1.title
         .img-block
-          div
-            a(href='#')
-              img(src='./assets/img/_00003.jpg', alt='pic')
           div
             a(href='#')
               img(src='./assets/img/_00004.jpg', alt='pic')
-          div
-            a(href='#')
-              img(src='./assets/img/_00005.jpg', alt='pic')
-          div
-            a(href='#')
-              img(src='./assets/img/_00006.jpg', alt='pic')
-          div
-            a(href='#')
-              img(src='./assets/img/_00007.jpg', alt='pic')
-          div
-            a(href='#')
-              img(src='./assets/img/_00008.jpg', alt='pic')
-        .adv-block
-          a.adv-block__url(href='#')
-            img.adv-block__img(src='./assets/img/_00028.jpg', alt='pic')
-            .adv-block__text
-              p.text_tint Рекламный тизер
-              h2.text_bold Театральная паутина
-              p.text
-                | Открытие новых сервисных
-                | центров немекого автопрома
-        .img-block
           div
             a.img-block_size.date-block.column.date-block__text(href='#')
               img.img-block__button(src='./assets/img/arr.svg', alt='arrow')
@@ -60,51 +40,5 @@ html(lang='en')
               |  сентября
           div
             a(href='#')
-              img(src='./assets/img/_00004.jpg', alt='pic')
-          div
-            a(href='#')
-              img(src='./assets/img/_00005.jpg', alt='pic')
-          div
-            a(href='#')
-              img(src='./assets/img/_00006.jpg', alt='pic')
-          div
-            a(href='#')
-              img(src='./assets/img/_00007.jpg', alt='pic')
-          div
-            a(href='#')
-              img(src='./assets/img/_00008.jpg', alt='pic')
-          div
-            a.img-block_size.date-block.column.date-block__text(href='#')
-              img.img-block__button(src='./assets/img/arr.svg', alt='arrow')
-              span 19
-              |  сентября
-          div
-            a(href='#')
-              img(src='./assets/img/_00010.jpg', alt='pic')
-          div
-            a(href='#')
-              img(src='./assets/img/_00011.jpg', alt='pic')
-          div
-            a(href='#')
-              img(src='./assets/img/_00012.jpg', alt='pic')
-          div
-            a(href='#')
-              img(src='./assets/img/_00013.jpg', alt='pic')
-          div
-            a(href='#')
-              img(src='./assets/img/_00014.jpg', alt='pic')
-          div
-            a(href='#')
-              img(src='./assets/img/_00015.jpg', alt='pic')
-        nav.pagination__nav
-          ul
-            li.pagination__item.pagination__item_active.text_bold
-              a(href='#') 1
-            li.pagination__item
-              a(href='#') 2
-            li.pagination__item
-              a(href='#') 3
-            li.pagination__item
-              a(href='#') 4
-            li.pagination__item
-              a(href='#') Следующая
+              img(src='./assets/img/_00003.jpg', alt='pic')
+    footer
